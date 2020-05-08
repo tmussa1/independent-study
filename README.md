@@ -34,18 +34,18 @@ after his PhD dissertation in 2000 as an unopinionated style of architecture gro
 A little background in HTTP will also be useful since it is the protocol that REST uses to transport messages across the wire. Components of an HTTP request
 can be the following
 
-- Content type – format of content which can be one of the non-exhaustive list of 
+- **Content type** – format of content which can be one of the non-exhaustive list of 
   - HTML, CSS, JavaScript
   - JSON, XML
   - Binary, blobs 
-- Content length – size of content
-- Authorization – the party’s details used by the server to verify permission
-- Accept – supported format for response. It can be one or more of the types listed above 
-- Cookies – information about user saved by browsers
+- **Content length** – size of content
+- **Authorization** – the party’s details used by the server to verify permission
+- **Accept** – supported format for response. It can be one or more of the types listed above 
+- **Cookies** – additional information about user saved by browsers
 
-### REST stands for Representational State Transfer and the bullet points constitute what it means to be RESTful.  
+REST stands for Representational State Transfer and the bullet points below constitute what it means to be RESTful.  
 
-- Client/server separation - The universal rule of application development is enforcing loose coupling and high cohesion. In a modular architecture, components
+- **Client/server separation** - The universal rule of application development is enforcing loose coupling and high cohesion. In a modular architecture, components
 can change their internal implementations as long as their API 
 (See - [Application Programming Interface](https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82/)) remains stable. REST lends itself 
 to be the defacto standard for client/server communication by defining clear boundaries between a consumer and the producer. The server can be consumed by 
@@ -53,15 +53,15 @@ multiple clients which promotes reuse and avoids redundancy. This becomes critic
 Enterprises are free to add their own layer of abstractions on top of REST as they see it fit to their own business needs. There are also recent trends on 
 glorified RESTful web services (See - [Microservices](https://microservices.io/), [GraphQL](https://graphql.org/), [gRPC](https://grpc.io/) ).
 
-- Stateless requests - Each request is independent of each other and must provide enough context for the server to respond. The request is short-lived, 
+- **Stateless requests** - Each request is independent of each other and must provide enough context for the server to respond. The request is short-lived, 
 and the server doesn’t remember the state of past requests. This is in contrast to game or database programming where a request determines the fate of 
 subsequent requests. 
 
-- Uniform interface - There must be some uniform way to discover resources behind the URIs. One of the few HTTP verbs must be used in a request. HTTP 
+- **Uniform interface** - There must be some uniform way to discover resources behind the URIs. One of the few HTTP verbs must be used in a request. HTTP 
 response must be accompanied by status and body. 
 
 
-#### Outside resources
+#### Outside Resources
 
 [Understanding RESTful API](https://mlsdev.com/blog/81-a-beginner-s-tutorial-for-understanding-restful-api)
 
