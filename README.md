@@ -57,7 +57,7 @@ Photo Credit - [What is REST API](https://phpenthusiast.com/blog/what-is-rest-ap
 
 &nbsp;
 
-##### what does it mean to be RESTful?
+###### What does it mean to be RESTful?
 
 - **Client/server separation** - The universal rule of application development is enforcing loose coupling and high cohesion. In a modular architecture, components
 can change their internal implementations as long as their API 
@@ -76,7 +76,7 @@ response must be accompanied by a status and a body.
 
 - **Cacheable** - the client is free to store the details of HTTP response. 
 
-##### What are the common HTTP verbs and some common implementations?
+###### What are the common HTTP verbs and some common implementations?
 
 - **GET** – A get request is one of the simplest operations. In layman’s terms, a client commonly a browser makes a request to a server.
 The server checks if the client is a known user with valid permissions and if the resource is available, then the server sends a response. The server might 
@@ -91,7 +91,7 @@ change anything.
 - **DELETE** – A delete request is made when trying to delete a resource. If persistence is part of the application, the resource will be deleted from disk. 
 Trying to delete a resource that doesn’t exist, or other constraints may throw exceptions based on the implementation. 
 
-##### What are HTTP status codes and what do they signify 
+###### What are HTTP status codes and what do they signify 
 
 - **1XX** – informational. Error code of the 100s provides the client additional information when a request is being processed and can be safely ignored 
 after the process is complete. 
@@ -103,12 +103,12 @@ authorized to obtain a resource.
 - **5XX** – server error. The most common 500 error code is displayed when the server is not available to serve resource. This is a generic response which may result 
 from different types of outages. 
 
-##### What are query strings and what are they used for? 
+###### What are query strings and what are they used for? 
 
 - Sometimes query strings give additional functionality to influence how data is being rendered. Query strings are most commonly used for pagination, formatting
 and sorting to name a few
 
-##### What tools are available to implement REST APIs?
+###### What tools are available to implement REST APIs?
 
 - There are numerous tools to implement REST APIs in most of the major languages. This [page](https://www.tecmint.com/best-nodejs-frameworks-for-developers/) contains
 some of the tools available to implement REST APIs in JavaScript. 
