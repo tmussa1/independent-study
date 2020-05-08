@@ -17,7 +17,7 @@ shown below was the best that could be done with the existing technologies prior
 
 &nbsp;
 
-[Photo Credit - SOAP requests with Postman](https://medium.com/@krissparks/soap-requests-with-postman-333c61137c41)
+Photo Credit - [SOAP requests with Postman](https://medium.com/@krissparks/soap-requests-with-postman-333c61137c41)
 
 ![REST API](https://github.com/tmussa1/independent-study/blob/master/images/rest-api.png)
 
