@@ -34,14 +34,15 @@ after his PhD dissertation in 2000 as an unopinionated style of architecture gro
 A little background in HTTP will also be useful since it is the protocol that REST uses to transport messages across the wire. Components of an HTTP request
 can be the following
 
-- **Content type** – format of content which can be one of the non-exhaustive list of 
+- **Content type** – format of content which can be some of 
   - HTML, CSS, JavaScript
   - JSON, XML
   - Binary, blobs 
 - **Content length** – size of content
 - **Authorization** – the party’s details used by the server to verify permission
-- **Accept** – supported format for response. It can be one or more of the types listed above 
-- **Cookies** – additional information about user saved by browsers
+- **Accept** – supported format for response. It can be one or more of the content types listed above 
+- **Cookies** – additional information about the user saved by browsers. For example, user preference information. See - 
+([Cookies](https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer))
 
 REST stands for Representational State Transfer and the bullet points below constitute what it means to be RESTful.  
 
