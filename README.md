@@ -126,5 +126,3 @@ some of the tools available to implement REST APIs in JavaScript.
 [Idempotency in REST APIs](https://restfulapi.net/idempotent-rest-apis/)
 
 [Http status codes](https://www.restapitutorial.com/httpstatuscodes.html)
-
-![REST API](https://github.com/tmussa1/independent-study/blob/master/images/rest-api.png)
