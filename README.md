@@ -31,8 +31,8 @@ endpoints, xsd (See [XML Schema Definition](https://www.w3schools.com/xml/schema
 This hard to use and hard to debug approach is what triggered industry veterans to look for alternatives. The philosophy of REST was popularized by Roy Fielding 
 after his PhD dissertation in 2000 as an unopinionated style of architecture grounded upon some fundamental principles. 
 
-A little background in HTTP will also be useful since it is the protocol that REST uses to transport messages across the wire. Components of an HTTP request
-can be the following
+###### A little background in HTTP will also be useful since it is the protocol that REST uses to transport messages across the wire. Components of an HTTP 
+request can be the following
 
 - **Content type** – format of content which can be some of 
   - HTML, CSS, JavaScript
@@ -44,7 +44,21 @@ can be the following
 - **Cookies** – additional information about the user saved by browsers. For example, user preference information. See - 
 ([Cookies](https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer))
 
-REST stands for Representational State Transfer and the bullet points below constitute what it means to be RESTful.  
+&nbsp;
+
+###### REST stands for Representational State Transfer based on http protocol. 
+
+&nbsp;
+
+![REST DEMO](https://github.com/tmussa1/independent-study/blob/master/images/rest-image.png)
+
+&nbsp;
+
+Photo Credit - [What is REST API](https://phpenthusiast.com/blog/what-is-rest-api)
+
+&nbsp;
+
+###### The following principles guide what it means to be RESTful.
 
 - **Client/server separation** - The universal rule of application development is enforcing loose coupling and high cohesion. In a modular architecture, components
 can change their internal implementations as long as their API 
@@ -52,15 +66,45 @@ can change their internal implementations as long as their API
 to be the defacto standard for client/server communication by defining clear boundaries between a consumer and the producer. The server can be consumed by 
 multiple clients which promotes reuse and avoids redundancy. This becomes critical in a large scale system making pieces of software fit like a jigsaw puzzle.
 Enterprises are free to add their own layer of abstractions on top of REST as they see it fit to their own business needs. There are also recent trends on 
-glorified RESTful web services (See - [Microservices](https://microservices.io/), [GraphQL](https://graphql.org/), [gRPC](https://grpc.io/) ).
+glorified RESTful web services (See - [Microservices](https://microservices.io/), [GraphQL](https://graphql.org/), [gRPC](https://grpc.io/)).
 
-- **Stateless requests** - Each request is independent of each other and must provide enough context for the server to respond. The request is short-lived, 
+- **Stateless requests** - Each oof the requests are independent of each other and must provide enough context for the server to respond. The requests are short-lived, 
 and the server doesn’t remember the state of past requests. This is in contrast to game or database programming where a request determines the fate of 
 subsequent requests. 
 
-- **Uniform interface** - There must be some uniform way to discover resources behind the URIs. One of the few HTTP verbs must be used in a request. HTTP 
-response must be accompanied by status and body. 
+- **Uniform interface** - There must be some uniform way to discover resources behind the URIs. One of the few HTTP verbs must be used in a request. An HTTP 
+response must be accompanied by a status and a body. 
 
+- **Cacheable** - client is free to store the response to a request. 
+
+###### Now that we refreshed our memory on HTTP verbs, let's define what four of the most popular HTTP verbs are used for in detail.
+
+- **GET** – A get request is one of the simplest operations. In layman’s terms, a client commonly a browser makes a request to a server to be served up a content.
+The server checks if the client is a known user with valid permissions and if the resource is available, then sends a response. The server might respond 
+with defined categories of error codes in case of having the above preconditions unfulfilled. The error code response might suggest an unauthorized user, 
+or a resource not found to say the least. More on error codes later. A get request is supposed to be designed to not have side effects of modifying a resource. 
+- **POST** – A post operation is used for creating a new resource. The data to be added is commonly obtained using an html form or through another client service but 
+getting data through other testing tools like CURL, POSTMAN and SOAPUI are also common. The API may do some validation based on the implementation such as 
+checking for a duplicate resource or if all the required fields are populated and with the correct format before storing the resource.  
+- **PUT** – A put request is made to modify an existing resource. The implementation might pull the resource based on a parameter passed in from the client and make 
+the appropriate modifications. Unlike a post request, put requests are idempotent, meaning trying to modify a resource that has already been modified doesn’t 
+change anything. 
+- **DELETE** – A delete request is made when trying to delete a resource. If persistence is part of the application, the resource will be deleted from disk. 
+Trying to delete a resource that doesn’t exist, or other constraints may throw exceptions based on the implementation. 
+
+###### Let us review HTTP status codes and what they signify by category
+
+- **1XX** – informational. Error code of the 100s provides the client additional information at times like when a request is being processed and can be safely ignored 
+after the process is complete. 
+- **2XX** – success. The classic 200 error code is used when a request is successful. 204 is also commonly used when a delete request is the successful and there is 
+no content to displayed back in response. 
+- **3XX** – redirection. Further action needed from user to complete request. 
+- **4XX** – client error. The most common 404 error code is displayed when client tries to request a request that doesn’t exist. 403 is also common when a user is not 
+authorized to obtain a resource.
+- **5XX** – server error. The most common 500 error code is displayed when the server is not available to serve resource. This is a generic response which may result 
+from different types of outages. 
+
+###### What are query strings and what are they used for 
 
 #### Outside Resources
 
