@@ -11,9 +11,9 @@ worth exploring. Historically, the workload of server to server communication ha
 needed to execute a simple request garnered the attention of a computer scientist Roy Fielding in the early 2000's. A simple SOAP request using XML as
 shown below was the best they could do with the existing technologies before the advent of what Roy proposed to the computing society.
 
-![Soap Request](https://github.com/tmussa1/independent-study/images/soap-request.png)
+![Soap Request](https://github.com/tmussa1/independent-study/blob/master/images/soap-request.png)
 
-![Soap Request](https://github.com/tmussa1/independent-study/images/rest-api.png)
+![Soap Request](https://github.com/tmussa1/independent-study/blob/master/images/rest-api.png)
 
 
 REST has gained popularity over traditional ways of developing software in Service Oriented Architecture (SOA) among other recently emerging 
