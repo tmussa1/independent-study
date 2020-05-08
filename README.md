@@ -21,6 +21,17 @@ Photo Credit - [SOAP requests with Postman](https://medium.com/@krissparks/soap-
 
 &nbsp;
 
+You might have wondered the opening and ending tags look like the HTML which we are mostly familiar with from working in this course. XML is indeed a 
+superset of HTML with extensive capabilities like to users like the ability to define their own tags.  XML had some advantages for integrating 
+semistructured data since requests don't have to exactly conform to a predefined schema. A WSDL, short for Web Service Definition Language, is a 
+document defines the contract between the client and the server but not having some of the fields which are tagged as not required in the WSDL does not 
+break the contract of communication. This enabled flexibility and seamless integration in its heyday. However, as can be seen in the picture above, 
+there is a lot to a SOAP request than just the data elements and pure verbatim required to perform business logic. The header defines a namespace, several
+endpoints, xsd (See [XML Schema Definition](https://www.w3schools.com/xml/schema_intro.asp)), version and some security metadata in the simplest example 
+given above of a SOAP request. 
+
+
+
 REST has gained popularity over traditional ways of developing software in Service Oriented Architecture (SOA) among other recently emerging 
 technologies like GraphQL and grpc. REST, short for Representational State Transfer, was introduced by Roy Fielding while he was working in his PhD back 
 in the early 2000's. 
