@@ -9,11 +9,17 @@ Our course had revolved around the evolution of JavaScript and client-side appli
 become the standard today, Single Page Applications. There was, however, another evolution happening in parallel on the server-side that I thought was
 worth exploring. Historically, the workload of server to server communication had been intractable. From CORBA to SOAP, the amount of boilerplate code 
 needed to execute a simple request garnered the attention of a computer scientist Roy Fielding in the early 2000's. A simple SOAP request using XML as
-shown below was the best they could do with the existing technologies before the advent of what Roy proposed to the computing society.
+shown below was the best that could be done with the existing technologies prior the advent of Roy's proposal.
+
+&nbsp;
 
 ![Soap Request](https://github.com/tmussa1/independent-study/blob/master/images/soap-request.png)
 
-![Soap Request](https://github.com/tmussa1/independent-study/blob/master/images/rest-api.png)
+&nbsp;
+
+[Photo Credit - SOAP requests with Postman](https://medium.com/@krissparks/soap-requests-with-postman-333c61137c41)
+
+![REST API](https://github.com/tmussa1/independent-study/blob/master/images/rest-api.png)
 
 
 REST has gained popularity over traditional ways of developing software in Service Oriented Architecture (SOA) among other recently emerging 
