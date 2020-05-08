@@ -5,7 +5,7 @@
 
 ## Developing REST APIs 
 
-Our course had revolved around the evolution of JavaScript and client-side applications from static sites to dynamic multi-page applications to what had 
+Our course has revolved around the evolution of JavaScript and client-side applications from static sites to dynamic multi-page applications to what had 
 become the standard today, Single Page Applications. There was, however, another evolution happening in parallel on the server-side that I thought was
 worth exploring. Historically, the workload of server to server communication had been intractable. From CORBA to SOAP, the amount of boilerplate code 
 needed to execute a simple request garnered the attention of a computer scientist Roy Fielding in the early 2000's. A simple SOAP request using XML as
@@ -19,8 +19,7 @@ shown below was the best that could be done with the existing technologies prior
 
 Photo Credit - [SOAP requests with Postman](https://medium.com/@krissparks/soap-requests-with-postman-333c61137c41)
 
-![REST API](https://github.com/tmussa1/independent-study/blob/master/images/rest-api.png)
-
+&nbsp;
 
 REST has gained popularity over traditional ways of developing software in Service Oriented Architecture (SOA) among other recently emerging 
 technologies like GraphQL and grpc. REST, short for Representational State Transfer, was introduced by Roy Fielding while he was working in his PhD back 
@@ -29,6 +28,8 @@ in the early 2000's.
 REST is an unopinionated style of architecture that leaves the decision of marking the distinction between pragmatism and theory to 
 the developer. Therefore, implementations of REST can vary based on the context and use-case but it must be grounded upon the fundamental bullet points 
 below. 
+
+![REST API](https://github.com/tmussa1/independent-study/blob/master/images/rest-api.png)
 
 - Client/server separation - The universal rule of application development is enforcing loose coupling and high cohesion. In a modular architecture, components
 can vary independently as long as the contract initially established (the interface) is not violated. REST lends itself to be the defacto standard for 
